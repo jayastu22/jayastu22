@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class lcm{
+    public static void main(String args[]) {
+        
+     
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the first number");
+
+        int a = sc.nextInt();
+
+        System.out.println("enter the second number");
+        int b = sc.nextInt();
+        
+        int big = (a>b)? a : b;
+        while(true){
+            if(a%big==0 && b%big==0)
+            {
+                System.out.println( "the HCL" +a+ " and " +b+ "is" +big);
+                break;
+            }   big++;
+        }       
+    }
+}
